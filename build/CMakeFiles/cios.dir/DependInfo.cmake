@@ -10,6 +10,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/hana_dayo/CIOS/src/boot.cpp" "CMakeFiles/cios.dir/src/boot.cpp.o" "gcc" "CMakeFiles/cios.dir/src/boot.cpp.o.d"
   "/home/hana_dayo/CIOS/src/cios.cpp" "CMakeFiles/cios.dir/src/cios.cpp.o" "gcc" "CMakeFiles/cios.dir/src/cios.cpp.o.d"
+  "/home/hana_dayo/CIOS/src/config.cpp" "CMakeFiles/cios.dir/src/config.cpp.o" "gcc" "CMakeFiles/cios.dir/src/config.cpp.o.d"
   "/home/hana_dayo/CIOS/src/main.cpp" "CMakeFiles/cios.dir/src/main.cpp.o" "gcc" "CMakeFiles/cios.dir/src/main.cpp.o.d"
   "/home/hana_dayo/CIOS/src/terminal.cpp" "CMakeFiles/cios.dir/src/terminal.cpp.o" "gcc" "CMakeFiles/cios.dir/src/terminal.cpp.o.d"
   "" "cios" "gcc" "CMakeFiles/cios.dir/link.d"

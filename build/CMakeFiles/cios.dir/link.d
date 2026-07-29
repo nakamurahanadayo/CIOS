@@ -5,6 +5,7 @@ cios: \
   CMakeFiles/cios.dir/src/main.cpp.o \
   CMakeFiles/cios.dir/src/cios.cpp.o \
   CMakeFiles/cios.dir/src/terminal.cpp.o \
+  CMakeFiles/cios.dir/src/config.cpp.o \
   CMakeFiles/cios.dir/src/boot.cpp.o \
   /usr/lib/gcc/x86_64-pc-linux-gnu/16/libstdc++.so \
   /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/libm.so \
@@ -49,6 +50,8 @@ CMakeFiles/cios.dir/src/main.cpp.o:
 CMakeFiles/cios.dir/src/cios.cpp.o:
 
 CMakeFiles/cios.dir/src/terminal.cpp.o:
+
+CMakeFiles/cios.dir/src/config.cpp.o:
 
 CMakeFiles/cios.dir/src/boot.cpp.o:
 

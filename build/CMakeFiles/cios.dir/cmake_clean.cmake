@@ -4,6 +4,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/cios.dir/src/boot.cpp.o.d"
   "CMakeFiles/cios.dir/src/cios.cpp.o"
   "CMakeFiles/cios.dir/src/cios.cpp.o.d"
+  "CMakeFiles/cios.dir/src/config.cpp.o"
+  "CMakeFiles/cios.dir/src/config.cpp.o.d"
   "CMakeFiles/cios.dir/src/main.cpp.o"
   "CMakeFiles/cios.dir/src/main.cpp.o.d"
   "CMakeFiles/cios.dir/src/terminal.cpp.o"

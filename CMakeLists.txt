@@ -9,6 +9,7 @@ add_executable(
     src/main.cpp
     src/cios.cpp
     src/terminal.cpp
+    src/config.cpp
     src/boot.cpp
 )
 

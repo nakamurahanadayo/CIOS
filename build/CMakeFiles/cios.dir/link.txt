@@ -1,1 +1,1 @@
-/usr/bin/c++ -Wl,--dependency-file=CMakeFiles/cios.dir/link.d CMakeFiles/cios.dir/src/main.cpp.o CMakeFiles/cios.dir/src/cios.cpp.o CMakeFiles/cios.dir/src/terminal.cpp.o CMakeFiles/cios.dir/src/boot.cpp.o -o cios
+/usr/bin/c++ -Wl,--dependency-file=CMakeFiles/cios.dir/link.d CMakeFiles/cios.dir/src/main.cpp.o CMakeFiles/cios.dir/src/cios.cpp.o CMakeFiles/cios.dir/src/terminal.cpp.o CMakeFiles/cios.dir/src/config.cpp.o CMakeFiles/cios.dir/src/boot.cpp.o -o cios
