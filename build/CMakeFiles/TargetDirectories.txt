@@ -1,0 +1,3 @@
+/home/hana_dayo/CIOS/build/CMakeFiles/cios.dir
+/home/hana_dayo/CIOS/build/CMakeFiles/edit_cache.dir
+/home/hana_dayo/CIOS/build/CMakeFiles/rebuild_cache.dir
