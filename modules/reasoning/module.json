@@ -1,0 +1,5 @@
+{
+ "name":"Reasoning Engine",
+ "status":"offline",
+ "provider":"llama.cpp"
+}

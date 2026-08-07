@@ -1,46 +1,62 @@
 #include "terminal.hpp"
-
+#include "cios_features/core_state.hpp"
+#include "cios_features/lore_commands.hpp"
+#include "cios_features/glados_hooks.hpp"
+#include "../src/ai/ai_manager.hpp"
+#include <cstdlib>
 #include <iostream>
 #include <string>
 
-void terminalLoop()
+void terminalLoop(CommandManager& manager)
 {
+
+    static cios::features::CoreStateManager featureState(
+        "/tmp/cios-cores.json"
+    );
+    static bool featureStateLoaded = featureState.load();
+    (void)featureStateLoaded;
+
     std::string input;
 
-    while(true)
+    while (true)
     {
         std::cout << "> ";
         std::getline(std::cin, input);
 
-        if(input == "/exit")
+        if (!std::cin)
         {
-            std::cout << "Shutting down CIOS...\n";
+            AIManager::engine.stop();
             break;
         }
 
-        else if(input == "/status")
+        if (input == "/exit")
         {
-            std::cout << "\nCIOS STATUS\n";
-            std::cout << "Core..............ONLINE\n";
-            std::cout << "Caroline..........OFFLINE\n";
-            std::cout << "GLaDOS............NOT LOADED\n";
-            std::cout << "Speech............OFFLINE\n";
-            std::cout << "Vision............OFFLINE\n\n";
+            std::cout << "\nStopping Intelligence Engine...\n";
+            AIManager::engine.stop();
+
+            std::cout << "Shutting down CIOS...\n";
+            std::cout.flush();
+
+            const int result =
+            std::system("systemctl poweroff");
+
+            if (result != 0)
+            {
+                std::cout
+                << "Poweroff failed. Returning to terminal.\n";
+            }
+
+            break;
+        }
+        if (cios::features::handleFeatureCommand(
+            input,
+            featureState,
+            std::cin,
+            std::cout))
+        {
+            continue;
         }
 
-        else if(input == "/help")
-        {
-            std::cout << "\nCommands:\n";
-            std::cout << "/status - system status\n";
-            std::cout << "/help   - show commands\n";
-            std::cout << "/exit   - shutdown\n\n";
-        }
-
-        else
-        {
-            std::cout << "Command received: "
-                      << input
-                      << "\n";
-        }
+        manager.execute(input);
     }
 }

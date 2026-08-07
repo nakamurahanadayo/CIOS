@@ -1,0 +1,23 @@
+CIOS HARDWARE INTELLIGENCE REPORT
+
+CPU..............Intel Core i3-3120M
+CORES............2
+THREADS..........4
+
+RAM..............15.4318 GB
+
+GPU..............Intel HD Graphics 4000
+GPU TYPE.........Integrated
+
+CIOS SCORE.......38/100
+CLASSIFICATION...EVOLUTION CORE
+
+
+MODEL SUPPORT
+
+Caroline.........SUPPORTED
+GLaDOS...........LIMITED
+Vision...........LIMITED
+
+RECOMMENDED MODEL
+Qwen 1.5B

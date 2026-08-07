@@ -1,0 +1,19 @@
+// GPU scoring update for profile.cpp
+
+if(gpuData.find("rtx") != std::string::npos)
+{
+    result.gpu = 30;
+}
+else if(gpuData.find("nvidia") != std::string::npos)
+{
+    result.gpu = 20;
+}
+else if(gpuData.find("intel") != std::string::npos ||
+        gpuData.find("uhd") != std::string::npos)
+{
+    result.gpu = 5;
+}
+else
+{
+    result.gpu = 3;
+}

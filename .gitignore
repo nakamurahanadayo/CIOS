@@ -1,0 +1,16 @@
+build/
+runtime/bin/
+runtime/models/
+*.gguf
+*.log
+*.tmp
+.vscode/
+.idea/
+build/
+runtime/bin/
+runtime/models/
+models/
+logs/
+rootfs/
+*.gguf
+*.zip

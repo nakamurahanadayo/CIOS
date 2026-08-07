@@ -1,0 +1,22 @@
+Add to commands/hardware.cpp:
+
+#include "../hardware/gpu_parser.hpp"
+
+Replace GPU output:
+
+std::string rawGPU = hardware.getGPU();
+
+std::cout
+<< "GPU.............."
+<< GPUParser::cleanName(rawGPU)
+<< "\n";
+
+std::cout
+<< "GPU TYPE........."
+<< GPUParser::type(rawGPU)
+<< "\n";
+
+
+Add to CMakeLists.txt:
+
+hardware/gpu_parser.cpp
