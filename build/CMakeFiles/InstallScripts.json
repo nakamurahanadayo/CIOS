@@ -1,7 +1,0 @@
-{
-	"InstallScripts" : 
-	[
-		"/home/hana_dayo/CIOS/build/cmake_install.cmake"
-	],
-	"Parallel" : false
-}
